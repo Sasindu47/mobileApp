@@ -57,9 +57,9 @@
                 <input type="password" id="password" required>
 
 		 <label>confirm password: </label>
-                <input type="password" id="confirmpassword" required>
+                <input type="password" id="confirmpassword" required><br>
 
-		 <label>email: </label>
+		 <label>email: </label><br>
                 <input type="email" id="email" required>
         
                 <button type="submit">register</button>
@@ -77,8 +77,11 @@
 	var confirmPassword = document.getElementById('confirmPassword').value;
 	
 		if(password == confirmPassword) {
-		//submit the form
-		window.location.href('index.html');
+		alert('Password is valid')
+		return true;
+	}else{
+	alert('Password is invalid')
+	return false;	
 	}
 
 	}
